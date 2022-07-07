@@ -21,9 +21,9 @@ class Staf {
 
   void getPenghasilan() {}
    set tunjangan(int dttunjang) {
-     _tunjangan = dttunjang;
+     tunjangan = dttunjang;
    }
-   int get tunjangan => this._tunjangan;
+   int get tunjangan => this.tunjangan;
 }
 
 class Dosen extends Staf {
@@ -87,10 +87,10 @@ class DosenTamu extends Dosen {
   }
 }
 
-class Staf extends Staf {
+class Staff extends Staf {
   int _tunjangan = 0;
   int _cuti = 12;
-  Staf(String nama, int gaji) : super(nama, gaji);
+  Staff(String nama, int gaji) : super(nama, gaji);
   @override
   void absen() {
     _absen++;

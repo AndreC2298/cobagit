@@ -2,7 +2,7 @@ class Mahasiswa {
   String _nama;
   String _nrp;
   String _status = 'Aktif';
-  int _sks = 2;
+  int _sks = 0;
   double _ips = 0;
   double _ipk = 0;
   Mahasiswa(this._nama, this._nrp);
